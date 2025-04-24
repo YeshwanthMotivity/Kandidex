@@ -1,0 +1,97 @@
+Python & SQL Intermediate Q&A
+
+Q1: What are Python decorators, and how do they work?
+A1: Decorators are functions that modify the behavior of other functions or methods without changing their actual code. They are implemented using the @decorator_name syntax and are commonly used for logging, authentication, and access control.
+
+Example:
+```python
+def decorator(func):
+    def wrapper():
+        print("Before function execution")
+        func()
+        print("After function execution")
+    return wrapper
+
+@decorator
+def say_hello():
+    print("Hello, World!")
+
+say_hello()
+```
+
+Q2: What is the difference between deepcopy() and copy() in Python?
+A2: The copy() function creates a shallow copy, meaning it copies the references to objects, not the actual objects. The deepcopy() function creates a deep copy, meaning it recursively copies all objects.
+
+Example:
+```python
+import copy
+
+list1 = [[1, 2], [3, 4]]
+shallow_copy = copy.copy(list1)
+deep_copy = copy.deepcopy(list1)
+
+list1[0][0] = 99
+
+print(shallow_copy)  # [[99, 2], [3, 4]]
+print(deep_copy)     # [[1, 2], [3, 4]]
+```
+
+Q3: How does indexing work in SQL, and why is it important?
+A3: Indexing in SQL is a technique used to improve query performance by reducing the amount of data scanned. An index creates a data structure (e.g., B-tree) that allows faster lookups.
+
+Example:
+```sql
+CREATE INDEX idx_customer_name ON customers(name);
+```
+This creates an index on the name column in the customers table, speeding up searches using WHERE name = 'John'.
+
+Q4: What is the difference between HAVING and WHERE in SQL?
+A4:
+- WHERE filters rows before aggregation.
+- HAVING filters rows after aggregation.
+
+Example:
+```sql
+SELECT department, COUNT(*) as emp_count
+FROM employees
+WHERE age > 25
+GROUP BY department
+HAVING COUNT(*) > 5;
+```
+Here, WHERE filters employees before grouping, and HAVING ensures only departments with more than 5 employees are returned.
+
+Q5: What is the purpose of the COALESCE() function in SQL?
+A5: The COALESCE() function returns the first non-null value in a list of expressions.
+
+Example:
+```sql
+SELECT COALESCE(NULL, NULL, 'Default Value', 'Another Value');
+-- Output: 'Default Value'
+```
+
+Q6: How do you implement exception handling in Python?
+A6: Python uses try-except blocks for exception handling.
+
+Example:
+```python
+try:
+    x = 10 / 0
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+finally:
+    print("Execution completed.")
+```
+This prevents the program from crashing if a division by zero occurs.
+
+Q7: What is the difference between INNER JOIN and OUTER JOIN in SQL?
+A7:
+- INNER JOIN returns only matching records from both tables.
+- OUTER JOIN includes matching and non-matching records (LEFT, RIGHT, FULL).
+
+Example:
+```sql
+SELECT customers.name, orders.order_id
+FROM customers
+INNER JOIN orders ON customers.customer_id = orders.customer_id;
+```
+This retrieves customers who have placed orders.

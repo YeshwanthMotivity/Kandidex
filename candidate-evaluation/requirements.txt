@@ -1,0 +1,8 @@
+Flask
+python-docx
+pdfplumber
+requests
+ollama
+transformers 
+sentencepiece
+torch
