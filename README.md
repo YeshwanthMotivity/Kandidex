@@ -36,7 +36,6 @@ kandidex/
 │   ├── src/components/UploadForm.js  # Upload component
 │   └── public/index.html             # React entry point
 
-
 ---
 
 ## ⚙️ How to Run the Project
