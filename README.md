@@ -47,7 +47,10 @@ kandidex/
         └── index.html            # Main React entry point
 ```
 ---
+## 📸 Architecture Diagram
+<img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/acb340b9-94c2-48ac-8ac5-0f9e101a4756" />
 
+---
 ## ⚙️ How to Run the Project
 
 ### 1. Clone the Repository
