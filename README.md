@@ -95,9 +95,7 @@ The project has been planned for several future enhancements to improve its func
 ## 📬  About the Team
 • Mentor / Manager: Mr. Venkata Ramana Sudhakar Polavarapu
 
-• Team Members: Yeshwanth Goud Mudimala, Sai Dinesh Bejjanki, Uma Venkata Karthik Vallabhaneni, 
-
-                Pushpaja Udayagiri, Sai Seetu Reddy Bommareddy
+• Team Members: Yeshwanth Goud Mudimala, Sai Dinesh Bejjanki, Uma Venkata Karthik Vallabhaneni, Pushpaja Udayagiri, Sai Seetu Reddy Bommareddy
 
 
 ---
