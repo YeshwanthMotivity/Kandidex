@@ -1,4 +1,4 @@
-# Kandidex
+# <img width="40" height="40" alt="image" src="https://github.com/user-attachments/assets/043a51c4-cf4e-4e00-97ec-32ddf76f9268" /> Kandidex
 Kandidex is an AI-powered candidate evaluation platform designed to streamline and enhance the hiring process. It achieves this by automatically analyzing and summarizing interview documents, allowing recruiters and hiring managers to quickly grasp key information and make informed decisions. The project is built with a Python Flask backend and a React frontend, offering a complete, full-stack solution.
 
 ---
